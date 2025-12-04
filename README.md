@@ -50,7 +50,7 @@ cmd에서 아래와 같은 명령어를 입력하여 모델을 학습할 수 있
 ```
 python train.py --env "HalfCheetah-v4" --model_save_path "./results/01_HalfCheetah/01_TD3_Best_Params.pth"
 ```
-3.1에 정의된 하이퍼파라미터를 변경하면서 학습을 시도해볼 수 있습니다. 학습을 실행하면 1,000 step 단위로 evaluation을 수행하고 해당 episode에 대한 average return 값을 실시간으로 확인할 수 있습니다.
+3.1에 정의된 하이퍼파라미터를 변경하면서 학습을 시도해볼 수 있습니다. 학습을 실행하면 5,000 step 단위로 evaluation을 수행하고 해당 episode에 대한 average return 값을 실시간으로 확인할 수 있습니다.
 또한, eval_frequency step마다 actor, critic 모델 및 append된 total return값의 리스트가 model_save_path 경로에 저장됩니다. 학습이 cmd에서 실행되고 있는 모습을 아래 그림과 같이 첨부합니다.
 
 <p align="center"><img src="https://github.com/user-attachments/assets/dcccaf78-0734-4348-a812-088f03ceab1e" width="40%" height="40%"></p>
